@@ -11,92 +11,92 @@
         <H1>Formulário - Linguagens de Programação</H1>
         <img src="imagens/1.png" alt="icon " class="icon">
     </header>
-    <form action=“https://www.w3schools.com/action_page.php”>
 
-        <fieldset>
-            <legend>Data</legend>
-            <input type="date" id="data" name="data">
-        </fieldset>
-
-        <fieldset>
-            <legend>Dados de Acesso</legend>
-            <label for="usuario">Usuário</label>
-            <input type="text" id="usuario" name="usuario"><br><br>
-            <label for="senha">Senha</label>
-            <input type="password" id="senha" name="senha"><br><br>
-            <input type="submit" value="Login">
-        </fieldset>
-        <fieldset>
-            <legend>Dados Pessoais:</legend>
-            <label for="nome">Nome Completo</label>
-            <input type="text" id="nome" name="nome"><br><br>
-            <label for="endereco">Endereço</label>
-            <input type="text" id="endereco" name="endereco"><br><br>
-            <label for="numero">Número</label>
-            <input type="text" id="numero" name="numero"><br><br>
-            <label for="complemento">Complemento</label>
-            <input type="text" id="complemento" name="complemento"><br><br>
-            <label for="cidades">Cidades</label>
-            <input list="cidades" name="cidade"><br>
-            
-            <datalist id="cidades">
-                <option value="São Paulo"></option>
-                <option value="Itu"></option>
-                <option value="Rio de Janeiro"></option>
-                <option value="Espirito Santo"></option>
-            </datalist>
-            
+    <main>
+        <form action=“https://www.w3schools.com/action_page.php”>
+            <fieldset>
+                <legend>Data</legend>
+                <input type="date" id="data" name="data">
+            </fieldset>
+            <fieldset>
+                <legend>Dados de Acesso</legend>
+                <label for="usuario">Usuário</label>
+                <input type="text" id="usuario" name="usuario"><br><br>
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha"><br><br>
+                <input type="submit" value="Login">
+            </fieldset>
+            <fieldset>
+                <legend>Dados Pessoais:</legend>
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome"><br><br>
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" name="endereco"><br><br>
+                <label for="numero">Número</label>
+                <input type="text" id="numero" name="numero"><br><br>
+                <label for="complemento">Complemento</label>
+                <input type="text" id="complemento" name="complemento"><br><br>
+                <label for="cidades">Cidades</label>
+                <input list="cidades" name="cidade"><br>
+        
+                <datalist id="cidades">
+                    <option value="São Paulo"></option>
+                    <option value="Itu"></option>
+                    <option value="Rio de Janeiro"></option>
+                    <option value="Espirito Santo"></option>
+                </datalist>
+        
+                <br>
+                <label for="estados">Estado</label>
+                <select name="estados" id="estados">
+                    <option value="SP">SP</option>
+                    <option value="RJ">RJ</option>
+                    <option value="ES">ES</option>
+                </select>
+                <br>
+                <br>
+                <label for="CEP">CEP</label>
+                <input type="text" id="CEP" name="CEP"><br><br>
+            </fieldset>
+            <!-- Genero - radio -->
             <br>
-            <label for="estados">Estado</label>
-            <select name="estados" id="estados">
-                <option value="SP">SP</option>
-                <option value="RJ">RJ</option>
-                <option value="ES">ES</option>
-            </select>
+            <fieldset>
+                <legend>Gênero:</legend>
+                <input type="radio" id="genero1" name="genero" value="masculino">
+                <label for="genero1">Masculino</label>
+                <input type="radio" id="genero2" name="genero" value="feminino">
+                <label for="genero2">Feminino</label>
+                <input type="radio" id="genero3" name="genero" value="outro">
+                <label for="genero3">Prefiro não comentar</label>
+            </fieldset>
+            <!-- CheckBox - curso -->
             <br>
+            <fieldset>
+                <legend>Curso:</legend>
+                <input type="checkbox" id="curso1" name="curso1" value="jogosdigitais">
+                <label for="curso1"> Estou cursando Jogos Digitais</label><br>
+                <input type="checkbox" id="curso2" name="curso2" value="gestao de ti">
+                <label for="curso2"> Estou cursando Gestão de TI</label><br>
+                <input type="checkbox" id="curso3" name="curso3" value="ads">
+                <label for="curso3"> Estou cursando ADS</label>
+            </fieldset>
+            <!-- Modelo - Radio -->
             <br>
-            <label for="CEP">CEP</label>
-            <input type="text" id="CEP" name="CEP"><br><br>
-        </fieldset>
+            <fieldset>
+                <legend>Modelo:</legend>
+                <input type="radio" id="modelo1" name="modelo" value="Presencial">
+                <label for="modelo1">Presencial</label>
+                <input type="radio" id="modelo2" name="modelo" value="EAD">
+                <label for="modelo2">EAD</label>
+                <input type="radio" id="modelo3" name="modelo" value="SemiPresencial">
+                <label for="modelo3">SemiPresencial</label><br><br>
+            </fieldset>
+            <br><button type="submit" id="finalButton">Submit</button>
+            </form>
+    </main>
 
-        <!-- Genero - radio -->
-
-        <br>
-        <fieldset>
-            <legend>Gênero:</legend>
-            <input type="radio" id="genero1" name="genero" value="masculino">
-            <label for="genero1">Masculino</label>
-            <input type="radio" id="genero2" name="genero" value="feminino">
-            <label for="genero2">Feminino</label>
-            <input type="radio" id="genero3" name="genero" value="outro">
-            <label for="genero3">Prefiro não comentar</label>
-        </fieldset>
-
-        <!-- CheckBox - curso -->
-        <br>
-        <fieldset>
-            <legend>Curso:</legend>
-            <input type="checkbox" id="curso1" name="curso1" value="jogosdigitais">
-            <label for="curso1"> Estou cursando Jogos Digitais</label><br>
-            <input type="checkbox" id="curso2" name="curso2" value="gestao de ti">
-            <label for="curso2"> Estou cursando Gestão de TI</label><br>
-            <input type="checkbox" id="curso3" name="curso3" value="ads">
-            <label for="curso3"> Estou cursando ADS</label>
-        </fieldset>
-
-        <!-- Modelo - Radio -->
-        <br>
-        <fieldset>
-            <legend>Modelo:</legend>
-            <input type="radio" id="modelo1" name="modelo" value="Presencial">
-            <label for="modelo1">Presencial</label>
-            <input type="radio" id="modelo2" name="modelo" value="EAD">
-            <label for="modelo2">EAD</label>
-            <input type="radio" id="modelo3" name="modelo" value="SemiPresencial">
-            <label for="modelo3">SemiPresencial</label><br><br>
-        </fieldset>
-
-        <br><button type="submit" id="finalButton">Submit</button>
-        </form>
+        <footer>
+            <h3>Desenvolvido por Gabriel Campelo</h3>
+        </footer>
 </body>
 </html>
